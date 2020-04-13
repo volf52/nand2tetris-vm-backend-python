@@ -1,20 +1,19 @@
 [tool.poetry]
-name = "pyvmbackend"
+name = "pyhackvm"
 version = "0.1.0"
-description = "VM to ASM translator"
+description = "IRL VM for Hack language and Jack ASM"
 authors = ["Arslan <rslnkrmt2552@gmail.com>"]
 license = "GPL-3.0+"
 
 [tool.poetry.dependencies]
 python = "^3.6"
-click = "^7.0"
+typer = "^0.1.1"
 
 [tool.poetry.dev-dependencies]
-flake8 = "^3.7"
 pytest = "^5.2"
 
 [tool.poetry.scripts]
-pyvm = "pyvmbackend.cli:cli"
+pyvm = "pyhackvm.cli:main"
 
 [build-system]
 requires = ["poetry>=0.12"]
